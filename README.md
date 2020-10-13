@@ -1,4 +1,4 @@
-# week4
+# Week 4 - Assignment
 Getting And Cleaning Data
 
 This repo contains 2  files.
