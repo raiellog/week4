@@ -1,10 +1,3 @@
----
-title: "Code Book"
-date: "13/10/2020"
-output:
-  html_document:
-    keep_md: yes
----
 
 ## Pre Analysis
 This script will check if the data file is present in your working directory. (If not, will download and unzip the file)
@@ -23,12 +16,12 @@ This script will check if the data file is present in your working directory. (I
 
 ## 2. Extract only mean() and std()
 Create a vector of only mean and std labels, then use the vector to subset dataSet.
-* MeanStdOnly : a vector of only mean and std labels extracted from 2nd column of features
+* Mean_Std : a vector of only mean and std labels extracted from 2nd column of features
 * dataSet : at the end of this step, dataSet will only contain mean and std variables
 
 ## 3. Changing Column label of dataSet
 Create a vector of "clean" feature names by getting rid of "()" at the end. Then, will apply that to the dataSet to rename column labels.
-* CleanFeatureNames : a vector of "clean" feature names 
+* CleanFeatNames : a vector of "clean" feature names 
 
 ## 4. Adding Subject and Activity to the dataSet
 Combine test data and train data of subject and activity, then give descriptive lables. Finally, bind with dataSet. At the end of this step, dataSet has 2 additonal columns 'subject' and 'activity' in the left side.
